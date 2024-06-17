@@ -35,7 +35,7 @@
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
 
 }
 
@@ -45,14 +45,14 @@
 
 .active,
 .accordion:hover {
-  background-color: #0061B8;
+  background-color: #0060B9;
   transform: translateY(-10px);
   color: white;
 }
 
 .pannel {
   max-height:0;
-  padding: 15px;
+  padding: 10px;
   transition: max-height 1s ease;
   background-color: white;
   overflow: hidden;
@@ -61,12 +61,12 @@
 }
 
 .pannel p {
-  padding: 10px;
+  padding: 5px;
   padding-bottom: 15px;
   color: rgba(0, 0, 0, 0.8);
   font-size: 1.2rem;
   line-height: 1.4;
-  font-size: 25px;
+  font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
