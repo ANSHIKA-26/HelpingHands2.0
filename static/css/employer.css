@@ -1,0 +1,127 @@
+body {
+    
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://foreseetheday.com/wp-content/uploads/2019/06/geometric-constructions-step-by-step-925x540.jpg);
+    color:white;
+    font:24px;
+   
+
+    
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Black overlay with 30% opacity */
+    z-index: -1;
+}
+input {
+    width: 300px;  /* Adjust as needed */
+    height: 35px;  /* Adjust as needed */
+}
+input::placeholder {
+    font-size: 18px;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+}
+.big-div {
+    background-color: rgba(27, 43, 50, 0.9);
+  /* max-width: 650px; */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin: 0 auto;
+margin-bottom: 40px;
+  border-radius: 5px;
+  z-index: 2;
+  position: relative;
+    box-shadow: 0px -1px 10px 5px #0060B9;
+    
+
+    overflow:auto;  
+}
+
+.form-group {
+    display: flexbox;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    /* border: 2px solid #000; Change color as needed */
+    margin: 10px; /* Adjust as needed */
+    padding: 10px; /* Adjust as needed */
+    align-self: flex-start;
+    font-size:18px;
+}
+.candidate-button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.candidate-button:hover {
+    background-color: blue;
+    color: white;
+}
+.logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    float: right;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    /* margin-left:  */
+}
+
+#submit-button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; /* Mouse pointer on hover */
+    transition-duration: 0.4s; /* Transition effect */
+    margin: 0 auto;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+
+}
+
+#submit-button:hover {
+    background-color: #45a049; /* Green background on hover */
+}
+#submit-button {
+    display: block;
+    margin: 100 auto;
+}
