@@ -23,10 +23,17 @@ body::before {
 input {
     width: 300px;  /* Adjust as needed */
     height: 35px;  /* Adjust as needed */
+    border-radius: 20px;
+    padding-top: 5px;
+    margin-top: 10px;
+    padding-left: 20px;
 }
 input::placeholder {
-    font-size: 18px;
+    font-size: 15px;
 }
+
+
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -64,13 +71,44 @@ margin-bottom: 40px;
     padding: 10px; /* Adjust as needed */
     align-self: flex-start;
     font-size:18px;
+    font-weight: 900;
 }
+
+
+
+
+#job-location{
+    width: 300px;  /* Adjust as needed */
+    height: 35px;  /* Adjust as needed */
+    border-radius: 20px;
+    font-size: 15px;
+}
+select {
+    width: 100%; /* Full width */
+    height: 35px; /* Height of the select box */
+    margin-top: 10px; /* Margin on top of the select box */
+    padding: 5px; /* Padding inside the select box */
+    font-size: 18px; /* Font size */
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff; /* White background */
+
+}
+option {
+    padding: 15px; /* Padding inside the option */
+    font-size: 18px; /* Font size for options */
+}
+
+
+
+
 .candidate-button {
     background-color: white;
     border: 1px solid black;
     padding: 10px;
     margin: 5px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .candidate-button:hover {
@@ -123,5 +161,8 @@ nav li {
 }
 #submit-button {
     display: block;
-    margin: 100 auto;
+    margin: 500 auto;
+    border-radius: 20px;
+    
+    
 }
