@@ -958,6 +958,12 @@ header {
 
 .logo{
   border-radius: 20%;
+  transition: 0.3s; /* Add transition for smooth hover effect */
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Add slight zoom on hover */
+  color: var(--dl-color-custom-primary1); /* Change color on hover */
 }
 #google_translate_element{
   margin-left: 20px; /* Add space to the left of the element */
