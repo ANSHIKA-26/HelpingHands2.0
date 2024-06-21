@@ -179,7 +179,7 @@
   padding-right: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-oneandhalfunits);
   justify-content: space-between;
-  background-color: var(--dl-color-custom-neutral-light);
+  background-color: #CAF4FF;
 }
 .mobileMenu {
   background-color: var(--dl-color-custom-neutral-light);
