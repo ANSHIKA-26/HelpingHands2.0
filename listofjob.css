@@ -192,7 +192,7 @@ header {
 }
 
 .buttons button:hover {
-    background-color: #0060B9;
+    background-color: #f7f7f7;
 }
 
 .dropdown_ham {
@@ -246,7 +246,7 @@ ul li {
 
 ul li a {
     display: inline-block;
-    color: #007bff;
+    color: #f4f4f4;
     text-decoration: none;
     background-color: #f8f9fa;
     padding: 10px 20px;
@@ -259,7 +259,7 @@ ul li a:hover {
 }
 
 ul li a:hover {
-    color: #0056b3;
+    color: #ffffff;
 }
 
 .dropbtn:hover {
