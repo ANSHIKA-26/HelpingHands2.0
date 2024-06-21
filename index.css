@@ -925,10 +925,20 @@ a {
   background-color: #f8f9fa;
   padding: 20px;
   text-align: center;
+  transition: 0.3s; /* Add transition for smooth hover effect */
+}
+
+.contact-us:hover {
+  background-color: #e9ecef; /* Change background color on hover */
 }
 
 .contact-us h2 {
   margin-bottom: 20px;
+  transition: 0.3s; /* Add transition for smooth hover effect */
+}
+
+.contact-us h2:hover {
+  color: var(--dl-color-custom-primary1); /* Change color on hover */
 }
 
 .contact-us ul {
@@ -936,21 +946,32 @@ a {
   padding: 0;
   display: flex;
   justify-content: space-around;
+  transition: 0.3s; /* Add transition for smooth hover effect */
+}
+
+.contact-us ul:hover {
+  transform: translateY(-2px); /* Add slight lift effect */
 }
 
 .contact-us ul li {
   margin-bottom: 10px;
+  transition: 0.3s; /* Add transition for smooth hover effect */
+}
+
+.contact-us ul li:hover {
+  transform: scale(1.1); /* Add slight zoom on hover */
 }
 
 .contact-us ul li a {
   color: #007bff;
   text-decoration: none;
+  transition: 0.3s; /* Add transition for smooth hover effect */
 }
 
 .contact-us ul li a:hover {
   color: #0056b3;
+  text-decoration: underline; /* Add underline on hover */
 }
-
 
 header {
   border-bottom: 2px solid black;
