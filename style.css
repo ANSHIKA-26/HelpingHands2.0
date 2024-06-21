@@ -164,6 +164,12 @@
   border-radius: 0px 60px 0px 0px;
   flex-direction: column;
   background-color: var(--dl-color-custom-secondary1);
+  transition: 0.3s;
+}
+
+.basicPricingCard:hover {
+  transform: translateY(-2px); 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 }
 .proPricingCard {
   gap: var(--dl-space-space-twounits);
