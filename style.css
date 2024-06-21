@@ -261,6 +261,11 @@
   padding-bottom: var(--dl-space-space-sixunits);
   justify-content: space-between;
   background-color: var(--dl-color-custom-neutral-light);
+  transition: 0.3s; 
+}
+
+.bannerContainer:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 }
 .footerContainer {
   width: 100%;
