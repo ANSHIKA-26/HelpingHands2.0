@@ -243,7 +243,13 @@
   padding-bottom: var(--dl-space-space-fourunits);
   justify-content: center;
   background-color: var(--dl-color-custom-neutral-light);
+  transition: 0.3s; 
 }
+
+.pricingContainer:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
 .bannerContainer {
   width: 100%;
   display: flex;
