@@ -129,6 +129,11 @@
   height: 2rem;
   flex-shrink: 0;
   margin-right: var(--dl-space-space-oneandhalfunits);
+  transition: 0.3s; 
+}
+
+.featuresIcon:hover {
+  fill: var(--dl-color-custom-primary1); 
 }
 .freePricingCard {
   gap: var(--dl-space-space-twounits);
