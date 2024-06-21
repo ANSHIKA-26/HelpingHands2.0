@@ -971,7 +971,15 @@ header {
 }
 a {
   font-size: 20px; /* Increase the font size */
+  transition: 0.3s; /* Add transition for smooth hover effect */
 }
+
+a:hover {
+  color: var(--dl-color-custom-primary1); /* Change color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+
 
 /* Loader Styling */
 .loader-container{
