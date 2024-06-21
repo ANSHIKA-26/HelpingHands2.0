@@ -115,7 +115,14 @@
   flex-direction: row;
   justify-content: flex-start;
   background-color: rgba(255, 255, 255, 0.65);
+  transition: 0.3s;
 }
+
+.featuresCard:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  transform: translateY(-2px);
+}
+
 .featuresIcon {
   fill: var(--dl-color-custom-neutral-dark);
   width: 2rem;
