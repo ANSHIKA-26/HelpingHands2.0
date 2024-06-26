@@ -5,47 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="form.css" />
 </head>
 <body>
-    <link rel="stylesheet" href="form.css" />
-    <div class="main">
+    <div class="container">
+        <div class="left-section">
+          <div class="head">
+            <button class="back-button" onclick="window.location.href='green.html'"><img src="assets/registerpage/image.png" width="50px" heigth="50px"/></button>
+            <h1 class="animated-heading">Job Application Form<span class="blinking-cursor">|</span></h1>
+            <div class="description">
+                <p>Please fill out the form below to provide your details and preferences.</p>
+            </div>
+          </div>  
+            <div class="form-content">
+                <form id="survey-form">
+                    <div class="form-group">
+                        <label for="skills" id="skills-label">What skills do you have?</label>
+                        <input id="skills" type="text" required placeholder="Please list all relevant skills you possess." />
+                    </div>
 
-        <h1 id="title">Job Listing Questionnaire Form</h1>
-      
-        <div class="main-content">
-          <div class="form-content">
-            <form id="survey-form">
-              <label for="name" id="name-label">What skills do you have?</label>
-              <input id="name" type="text" required placeholder="Please list all relevant skills you possess." />
-      
-              <label for="name" id="name-label">Do you have any experience in this field?</label>
-              <input id="name" type="text" required placeholder="Experience(if any)" />
-              <label for="dropdown">Are you willing to relocate for a job?</label>
-              <select id="dropdown">
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-              </select>
-              <label for="number" id="number-label">What is your expected salary range?</label>
-              <input id="number" type="number" required placeholder="Enter your range" />
-      
-              <label for="dropdown">What are your job requirements?</label>
-              <select id="dropdown">
-                <option value="student">Student</option>
-                <option value="full-time-learner">Full time learner</option>
-                <option value="full-time-job">Full time job</option>
-                <option value="part-time-job">Part time job</option>
-                <option value="prefer-not-to-say">Prefer not to say</option>
-                <option value="other">Other</option>
-              </select>
-      
-              <label for="comment">Do you have any other preferences or requirements for your desired job?</label>
-              <textarea rows="4" cols="50" id="comment">Enter your comment here...</textarea>
-      
-              <button type="submit" id="submit" onclick="window.location.href='listofjob.html'" >Submit</button>
-            </form>
-          </div>
+                    <div class="form-group">
+                        <label for="experience" id="experience-label">Do you have any experience in this field?</label>
+                        <input id="experience" type="text" required placeholder="Experience (if any)" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="relocate" id="relocate-label">Are you willing to relocate for a job?</label>
+                        <select id="relocate">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="salary" id="salary-label">What is your expected salary range?</label>
+                        <input id="salary" type="number" required placeholder="Enter your range" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="job-requirements" id="job-requirements-label">What are your job requirements?</label>
+                        <select id="job-requirements">
+                            <option value="student">Student</option>
+                            <option value="full-time-learner">Full-time learner</option>
+                            <option value="full-time-job">Full-time job</option>
+                            <option value="part-time-job">Part-time job</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="apply-job" id="apply-job-label">Which job position are you applying for?</label>
+                        <input id="apply-job" type="text" required placeholder="Enter the job position" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comment" id="comment-label">Do you have any other preferences or requirements for your desired job?</label>
+                        <textarea rows="4" cols="50" id="comment">Enter your comment here...</textarea>
+                    </div>
+
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
         </div>
+        <div class="right-section">
+          <div class="video-container">
+              <video autoplay loop muted class="background-video">
+                  <source src="./assets/videos/video_1.mp4" type="video/mp4">
+                  <!-- Add more source elements for different video formats if needed -->
+                  Your browser does not support the video tag.
+              </video>
+          </div>
       </div>
-      <script src="script.js"></script>
+    </div>
+    <!-- <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.transition-image');
+
+        function changeImage() {
+            images[currentIndex].style.opacity = 0;
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].style.opacity = 1;
+        }
+
+        setInterval(changeImage, 3000);
+    </script> -->
 </body>
 </html>

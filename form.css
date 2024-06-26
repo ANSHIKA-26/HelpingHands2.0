@@ -1,99 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
-    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f0f0f0, #e5f0ff);
+  overflow: hidden;
 }
 
-.main {
-    background-image: url(https://foreseetheday.com/wp-content/uploads/2019/06/geometric-constructions-step-by-step-925x540.jpg);
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  color: #ffffff;
-  overflow-y: scroll;
-  font-size: 24px
+.container {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
 }
 
-.main::after {
-content: "";
-  background-color: rgb(0, 0, 0,.8);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.main > h1,
-.main > p {
-text-align: center;
-font-family: 35px;
-z-index: 2;
-position: relative
-}
-
-.main-content {
-background-color: rgba(27, 43, 50, 0.9);
-  max-width: 650px;
+.left-section, .right-section {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 40px;
-  margin: 0 auto;
-margin-bottom: 40px;
-  border-radius: 5px;
-  z-index: 2;
-  position: relative;
-    box-shadow: 0px -1px 10px 5px #0060B9;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
 }
 
-#name, #email, #number, #dropdown, #comment {
+.left-section {
+  background: #fff;
+  position: relative;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+  border: none;
+  color: white;
+  padding: 0px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 1%;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.back-button:hover {
+  transform: scale(1.25);
+  color: #000000;
+}
+
+.animated-heading {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 60px 0 20px; 
+  margin-top: 40%;
+  color: #000;
+  animation: fadeIn 2s ease-in-out;
+  letter-spacing: 1px;
+}
+
+.description {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.form-content {
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: left;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.form-content:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.5), 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+#skills, #experience, #relocate, #salary, #job-requirements, #apply-job, #comment {
   display: block;
   width: 100%;
-  height: 35px;
-  padding: 5px 10px;
-  color: #000000;
-  background-color: #ffffff;
-  border: 1px solid #eeeeee;
+  padding: 12px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #eee;
   border-radius: 5px;
-  font-size: 20px;
-  margin-bottom: 40px;
+  font-size: 16px;
+  margin-top: 5px;
 }
 
-label[for=name], 
-label[for=email],
-label[for=number],
-label[for=dropdown],
-label[for=comment] {
-margin-bottom: 10px;
-display: inline-block;
-}
-
-#video-length, 
-#content-quality,
-#more-videos,
-fieldset input {
-height: 20px;
-width: 20px;
-margin-right: 15px;
-margin-bottom: 15px;
+label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: #333;
 }
 
 #comment {
-min-height: 180px;
-}
-
-label[for=comment]{
-margin-top: 30px
+  min-height: 100px;
 }
 
 #submit {
-display: block;
-width: 100%;
-padding: 0.75rem;
-background: #0060B9;
-border-radius: 2px;
-cursor: pointer;
-border: 0;
-color: #ffffff;
-font-size: 20px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: #0060B9;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#submit:hover {
+  background: #004d99;
+  transform: scale(1.05);
+}
+
+.right-section {
+  background: #f0f0f0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure the video doesn't overflow */
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
