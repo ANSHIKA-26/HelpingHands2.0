@@ -11,7 +11,7 @@
     <div class="container">
         <div class="left-section">
           <div class="head">
-            <button class="back-button" onclick="window.location.href='green.html'"><img src="assets/registerpage/image.png" width="50px" heigth="50px"/></button>
+            <button class="back-button" onclick="window.location.href='green.html'"><img src="assets/registerpage/image.png" width="50px" height="50px"/></button>
             <h1 class="animated-heading">Job Application Form<span class="blinking-cursor">|</span></h1>
             <div class="description">
                 <p>Please fill out the form below to provide your details and preferences.</p>
@@ -69,26 +69,32 @@
             </div>
         </div>
         <div class="right-section">
-          <div class="video-container">
-              <video autoplay loop muted class="background-video">
-                  <source src="./assets/videos/video_1.mp4" type="video/mp4">
-                  <!-- Add more source elements for different video formats if needed -->
-                  Your browser does not support the video tag.
-              </video>
+          <div class="image-container">
+            <img src="assets/JobForms_Images/img1.jpg" class="transition-image">
+            <img src="assets/JobForms_Images/img2.jpg" class="transition-image">
+            <img src="assets/JobForms_Images/img3.jpg" class="transition-image">
+            <img src="assets/JobForms_Images/img4.jpg" class="transition-image">
+            <img src="assets/JobForms_Images/img5.jpg" class="transition-image">
+            <img src="assets/JobForms_Images/img6.jpg" class="transition-image">
+            <img src="assets/JobForms_Images/img7.jpg" class="transition-image">
+            <img src="assets/JobForms_Images/img8.jpg" class="transition-image">
           </div>
-      </div>
+        </div>
     </div>
-    <!-- <script>
-        let currentIndex = 0;
-        const images = document.querySelectorAll('.transition-image');
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+  let currentIndex = 0;
+  const images = document.querySelectorAll('.transition-image');
 
-        function changeImage() {
-            images[currentIndex].style.opacity = 0;
-            currentIndex = (currentIndex + 1) % images.length;
-            images[currentIndex].style.opacity = 1;
-        }
+  function changeImage() {
+    images[currentIndex].style.opacity = 0;
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].style.opacity = 1;
+  }
 
-        setInterval(changeImage, 3000);
-    </script> -->
+  setInterval(changeImage, 4000); // Change image every 3 seconds
+});
+
+    </script>
 </body>
 </html>
