@@ -59,6 +59,42 @@ HelpingHands2.0 is a unique platform dedicated to connecting individuals in need
 
 <br>
 
+## Getting Started
+
+Follow these instructions to set up and run the project locally.
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+- [Git](https://git-scm.com/)
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/ANSHIKA-26/HelpingHands2.0.git
+```
+
+## Running the Client (Frontend)
+
+Navigate to the `frontend` directory and install the dependencies:
+
+```bash
+cd frontend
+npm i
+```
+
+Start the development server:
+
+```bash
+npm start
+```
+
+The frontend should now be running on [http://localhost:3000](http://localhost:3000).
+<br>
+
 <div>
   <h2>🔗 Important Links</h2>
 </div>

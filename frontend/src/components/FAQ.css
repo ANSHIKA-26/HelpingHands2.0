@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #003EB3;
+    --accent-color: #85DCFF;
+    --background-color: #E5F0FF;
+    --text-color: #000000;
+    --heading-font-size: 2rem;
+    --accordion-font-size: 1.25rem;
+    --accordion-body-font-size: 1rem;
+    --font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    --spacing-unit: 16px;
+    --border-radius: 4px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+  }
+  
+  .home-faq {
+    margin: 0 3rem;
+  }
+  
+  .home-banner {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--spacing-unit);
+  }
+  
+  .banner-container {
+    height: 76px;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: var(--heading-font-size);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-unit);
+  }
+  
+  .accordion-item {
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-unit);
+  }
+  
+  .accordion-header button {
+    width: 100%;
+    text-align: left;
+    padding: var(--spacing-unit);
+    font-size: var(--accordion-font-size);
+    font-weight: 500;
+    background-color: var(--background-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .accordion-button {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  .accordion-button.collapsed {
+    background-color: white;
+  }
+  
+  .accordion-body {
+    font-style:italic;
+    padding: var(--spacing-unit);
+    font-size: var(--accordion-body-font-size);
+  }
+  
+  .accordion-body p {
+    margin: 0;
+  }
+  
+  .accordion-button:hover {
+    background-color: var(--accent-color);
+  }
+  
