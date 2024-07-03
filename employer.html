@@ -1,169 +1,141 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WorkIndia</title>
-    <link rel="stylesheet" href="employer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        main {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            padding: 50px 0;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .big-div {
+            display: flex;
+            justify-content: space-around;
+
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            margin: 10px;
+            flex: 1;
+            min-width: 250px;
+            align-content: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 5px;
+        }
+        button {
+            background-color: #28a745;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .candidate-button {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 15px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .candidate-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    
-    <!-- <header>
-        <div class="container">
-            <a href="#" class="logo">WorkIndia</a>
-            <nav>
-                <ul>
-                    <li><a href="#">FIND NEW JOB</a></li>
-                    <li><a href="#">FAQ/HELP</a></li>
-                    <li><a href="#">SIGN IN</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header> -->
-
     <main>
-        <h1 style="margin-left: 10%; color: white;">Job Posting Form </h1>
-
-        <div class="big-div">
-            <div class="form-group">
-<br>
-                <label for="job-title">Job Title</label>
-                <br>
-                <input type="text" id="job-title" name="job-title" placeholder="Enter the job Title">
-            </div>
-            <div class="form-group">
-                <label for="job-location">Job Location</label>
-                <br>
-
-                <select name="job-location" id="job-location">
-                    <option value="">Select From The Drop-down</option>
-                    <option value="delhi">Delhi</option>
-                    <option value="mumbai">Mumbai</option>
-                    <option value="bangalore">Bangalore</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="no-of-openings">No Of Openings</label>
-                <input type="number" id="no-of-openings" name="no-of-openings" placeholder="Eg. 2">
-            </div>
-            <div class="form-group">
-                <label for="min-salary">Minimum Salary</label>
-                <input type="number" id="min-salary" name="min-salary" placeholder="Minimum Salary">
-            </div>
-            <!-- Add div for Maximum Salary here -->
-        </div>
-        <div class="big-div">
-            <div class="form-group">
-
-                <label for="job-title">Skills</label> 
-                <br>
-                <input type="text" id="job-title" name="job-title" style="width: 600px;" placeholder="Enter the skills required to apply for this job">
-            </div>
-            <div class="form-group">
-                <label for="job-location">Type of Candidates</label>
-                <br>
+        <h1>Job Posting Form</h1>
+        <div class="container">
+            <div class="big-div">
                 <div class="form-group">
-                    <button class="candidate-button">Any</button>
-                    <button class="candidate-button">freshers</button>
-                    <button class="candidate-button">Experienced</button>
-                </div><br>
-
-                
-            <div class="form-group">
-                <label for="no-of-openings">No Of Openings</label>
-                <br>
-                <input type="number" id="no-of-openings" name="no-of-openings" placeholder="Eg. 2">
+                    <label for="job-title">Job Title</label>
+                    <input type="text" id="job-title" name="job-title" placeholder="Enter the job Title">
+                </div>
+                <div class="form-group">
+                    <label for="job-location">Job Location</label>
+                    <select name="job-location" id="job-location">
+                        <option value="">Select From The Drop-down</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="no-of-openings">No Of Openings</label>
+                    <input type="number" id="no-of-openings" name="no-of-openings" placeholder="Eg. 2">
+                </div>
+                <div class="form-group">
+                    <label for="min-salary">Minimum Salary</label>
+                    <input type="number" id="min-salary" name="min-salary" placeholder="Minimum Salary">
+                </div>
             </div>
-            <div class="form-group">
-                <label for="min-salary">Minimum Salary</label>
-                <br>
-                <input type="number" id="min-salary" name="min-salary" placeholder="Minimum Salary">
+            <div class="big-div">
+                <div class="form-group">
+                    <label for="skills">Skills</label>
+                    <input type="text" id="skills" name="skills" style="width: 100%;" placeholder="Enter the skills required to apply for this job">
+                </div>
+                <div class="form-group">
+                    <label for="candidate-type">Type of Candidates</label>
+                    <div>
+                        <button class="candidate-button">Any</button>
+                        <button class="candidate-button">Freshers</button>
+                        <button class="candidate-button">Experienced</button>
+                    </div>
+                </div>
             </div>
-            <!-- Add div for Maximum Salary here -->
+            <div class="big-div">
+                <div class="form-group">
+                    <label for="company-name">Company Name</label>
+                    <input type="text" id="company-name" name="company-name" placeholder="Company Name">
+                </div>
+                <div class="form-group">
+                    <label for="contact-person">Contact Person Name</label>
+                    <input type="text" id="contact-person" name="contact-person" placeholder="Contact Person Name">
+                </div>
+                <div class="form-group">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="text" id="phone-number" name="phone-number" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="email-id">Email ID</label>
+                    <input type="email" id="email-id" name="email-id" placeholder="Email ID">
+                </div>
+                <div class="form-group">
+                    <label for="job-address">Job Address</label>
+                    <input type="text" id="job-address" name="job-address" placeholder="Job Address">
+                    <br><br>
+                    <button id="submit-button" type="button" onclick="window.location.href='recruiter.html'">Submit</button>
+                </div>
+            </div>
         </div>
-        </div>
-<div class="big-div">
-<div class="form-group">
-    <label for="company-name">Company Name</label>
-    <br>
-    <input type="text" id="company-name" name="company-name" placeholder="Company Name" style="width: 200px;">
-</div>
-<div class="form-group">
-    <label for="contact-person">Contact Person Name</label>
-    <br>
-    <input type="text" id="contact-person" name="contact-person" placeholder="Contact Person Name" style="width: 200px;">
-</div>
-<div class="form-group">
-    <label for="phone-number">Phone Number</label>
-    <br>
-    <input type="text" id="phone-number" name="phone-number" placeholder="Phone Number" style="width: 200px;">
-</div>
-<div class="form-group">
-    <label for="email-id">Email ID</label>
-    <br>
-    <input type="email" id="email-id" name="email-id" placeholder="Email ID" style="width: 200px;">
-</div>
-<div class="form-group">
-    <label for="job-address">Job Address</label>
-    <br>
-    <input type="text" id="job-address" name="job-address" placeholder="Job Address" style="width: 200px;">
-    <br><br>
-    <button id="submit-button" type="button" onclick="window.location.href='recruiter.html'" >Submit</button>
-
-</div>
-</div>
-        <!-- <div class="container">
-            <section class="hero">
-                <h2>Post your job in just 2 minutes!</h2>
-                <p>India's Best Hiring Platform</p>
-                <button>Get Started</button>
-            </section>
-
-            <section class="benefits">
-                <h3>Benefits</h3>
-                <ul>
-                    <li>Get unlimited calls directly from the candidates.</li>
-                    <li>Get access to the database of over 3.5 Crore candidates.</li>
-                </ul>
-            </section>
-
-            <section class="job-posting">
-                <h2>Basic Job Details</h2>
-                <p>Need Help? Call us at 08069824660</p>
-                <form>
-                    <div class="form-group">
-                        <label for="job-title">Job Title</label>
-                        <input type="text" id="job-title" name="job-title" placeholder="Enter the job Title">
-                    </div>
-                    <div class="form-group">
-                        <label for="job-location">Job Location</label>
-                        <select name="job-location" id="job-location">
-                            <option value="">Select From The Drop-down</option>
-                            <option value="delhi">Delhi</option>
-                            <option value="mumbai">Mumbai</option>
-                            <option value="bangalore">Bangalore</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="no-of-openings">No Of Openings</label>
-                        <input type="number" id="no-of-openings" name="no-of-openings" placeholder="Eg. 2">
-                    </div>
-                    <div class="form-group">
-                        <label for="min-salary">Minimum Salary</label>
-                        <input type="number" id="min-salary" name="min-salary" placeholder="Minimum Salary">
-                    </div>
-                    <div class="form-group">
-                        <label for="max-salary">Maximum Salary</label>
-                        <input type="number" id="max-salary" name="max-salary" placeholder="Maximum Salary">
-                    </div>
-                    <button type="submit">Post Job</button>
-                </form>
-            </section>
-        </div>-->
-    </main> 
-
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
