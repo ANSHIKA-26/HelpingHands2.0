@@ -15,3 +15,6 @@ var swiper = new Swiper(".review-slider", {
     duration: 800,
     delay: 400
   });
+  function redirectToRegister() {
+    window.location.href = 'register.html';
+}

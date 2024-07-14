@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #e5f0ff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-title {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+        .input-field {
+            width: 100%;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .submit-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.75rem;
+            margin-top: 1rem;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 412px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        .submit-button:hover {
+            background-color: #336b36;
+        }
+        .cancelbtn {
+            background-color: #f44336;
+            color: white;
+            padding: 0.75rem;
+            margin-top: 0.5rem;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 412px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        .cancelbtn:hover {
+            background-color: #e33e2f;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+<div class="container">
+    <h2 class="form-title">Register</h2>
+    <form action="/submit_registration" method="post">
+        <label for="uname" class="sr-only">Username</label>
+        <input type="text" id="uname" name="uname" class="input-field" placeholder="Enter Username" required>
+        <label for="email" class="sr-only">Email</label>
+        <input type="email" id="email" name="email" class="input-field" placeholder="Enter Email" required>
+
+        
+        <label for="psw" class="sr-only">Password</label>
+        <input type="password" id="psw" name="psw" class="input-field" placeholder="Enter Password" required>
+
+        <label for="psw-repeat" class="sr-only">Repeat Password</label>
+        <input type="password" id="psw-repeat" name="psw-repeat" class="input-field" placeholder="Repeat Password" required>
+
+        <button type="submit" class="submit-button">Register</button>
+        <button type="button" class="cancelbtn" onclick="window.location.href='index.html'">Cancel</button>
+    </form>
+</div>
+
+</body>
+</html>
