@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Helping Hands</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="register-container">
+            <a href="index.html" class="logo">Helping Hands</a>
+            <h1>Create Your Account</h1>
+            <p>Join us to find local job opportunities</p>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="terms.html">Terms and Conditions</a></label>
+                </div>
+                <button type="submit" class="register-btn">Create Account</button>
+            </form>
+            <p class="login-link">Already have an account? <a href="login.html">Log in</a></p>
+        </div>
+    </main>
+</body>
+</html>
