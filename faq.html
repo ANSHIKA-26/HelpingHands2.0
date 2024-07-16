@@ -1,113 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frequently Asked Questions</title>
-    <link rel="stylesheet" href="stylefaq.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <div class="wrapper">
-      <h1 style="font-size: 50px;">Frequently Asked Questions</h1>
-      <br>  
-      <div class="faq">
-        <button class="accordion">
-            How can I search for jobs on this website?
-            <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <div class="pannel">
-          <p>
-            You can search for jobs by entering keywords in the search
-             bar and filtering the results based on your preferences.
-
-          </p>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved FAQ Page</title>
+    <link rel="stylesheet" href="stylefaq.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+          <div class="faq">
+              <button class="accordion">
+                  <i class="fas fa-search"></i>
+                  How can I search for jobs on this website?
+                  <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="panel">
+                  <p>You can search for jobs by entering keywords in the search bar and filtering the results based on your preferences. Our advanced search options allow you to narrow down results by location, job type, and more.</p>
+              </div>
+          </div>
+          <div class="faq">
+              <button class="accordion">
+                  <i class="fas fa-dollar-sign"></i>
+                  Are there any fees for using this platform?
+                  <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="panel">
+                  <p><strong>No</strong>, our platform is completely free for job seekers. There are no hidden charges or fees. We believe in connecting talent with opportunities without any cost to the job seeker.</p>
+              </div>
+          </div>
+          <div class="faq">
+              <button class="accordion">
+                  <i class="fas fa-envelope"></i>
+                  How can I contact employers through this website?
+                  <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="panel">
+                  <p>You can contact employers by sending them a message through our secure messaging system or by using the contact information provided in the job listing. We encourage professional communication to increase your chances of success.</p>
+              </div>
+          </div>
+          <div class="faq">
+              <button class="accordion">
+                  <i class="fas fa-bell"></i>
+                  Can I receive job alerts for new postings?
+                  <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="panel">
+                  <p><strong>Yes</strong>, you can set up job alerts based on your preferences. You will receive notifications when new jobs matching your criteria are posted. This feature helps you stay up-to-date with the latest opportunities in your field.</p>
+              </div>
+          </div>
+          <div class="faq">
+              <button class="accordion">
+                  <i class="fas fa-lock"></i>
+                  Is my personal information secure on this platform?
+                  <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="panel">
+                  <p><strong>Yes</strong>, we take data privacy and security seriously. Your personal information is encrypted and protected to ensure confidentiality. We adhere to strict data protection regulations to safeguard your information.</p>
+              </div>
+          </div>
       </div>
-      <br>
-      <div class="faq">
-        <button class="accordion">
-            Are there any fees for using this platform?
-          <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <div class="pannel">
-          <p>
-            <span class="bold-dark">No</span>, our platform is completely free for job seekers. There
-                      are no hidden charges or fees.
-          </p>
-        </div>
-      </div>
-      <br>
-      <div class="faq">
-        <button class="accordion">
-            How can I contact employers through this website?
+  </div>
 
-          <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <div class="pannel">
-          <p>
-            You can contact employers by sending them a message
-                      through our messaging system or by using the contact
-                      information provided in the job listing.
-          </p>
-        </div>
-      </div>
-      <br>
-      <div class="faq">
-        <button class="accordion">
-            Can I receive job alerts for new postings?
-          <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <div class="pannel">
-          <p>
-            <span class="bold-dark">Yes</span>, you can set up job alerts based on your preferences.
-            You will receive notifications when new jobs matching your
-            criteria are posted.
-          </p>
-        </div>
-      </div>
-      <br>
-      <div class="faq">
-        <button class="accordion">
-            Is my personal information secure on this platform?
-            <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <div class="pannel">
-          <p>
-            <span class="bold-dark">Yes</span>, we take data privacy and security seriously. Your
-                      personal information is encrypted and protected to ensure
-                      confidentiality.
-          </p>
-        </div>
-      </div>
+  <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          const accordions = document.querySelectorAll('.accordion');
 
-    </div>
-
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          this.parentElement.classList.toggle("active");
-
-          var pannel = this.nextElementSibling;
-
-          if (pannel.style.maxHeight) {
-      pannel.style.maxHeight = null;
-    } else {
-      pannel.style.maxHeight = pannel.scrollHeight + "px";
-    }
-        });
-      }
-    </script>
-  </body>
+          accordions.forEach(accordion => {
+              accordion.addEventListener('click', () => {
+                  accordion.classList.toggle('active');
+                  const panel = accordion.nextElementSibling;
+                  
+                  if (panel.style.maxHeight) {
+                      panel.style.maxHeight = null;
+                      panel.style.padding = '0 20px';
+                  } else {
+                      panel.style.maxHeight = panel.scrollHeight + 'px';
+                      panel.style.padding = '20px';
+                  }
+              });
+          });
+      });
+  </script>
+</body>
 </html>

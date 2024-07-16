@@ -10,6 +10,106 @@
   <script src="https://kit.fontawesome.com/2815a7015d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper@11.1.4/swiper-bundle.min.css" />
 
+  <style>body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .faq-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .faq {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .faq:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .accordion {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .accordion:hover, .accordion.active {
+    background-color: #3498db;
+    color: #ffffff;
+  }
+  
+  .accordion i {
+    margin-right: 10px;
+  }
+  
+  .accordion i:last-child {
+    margin-right: 0;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion.active i:last-child {
+    transform: rotate(180deg);
+  }
+  
+  .panel {
+    padding: 0 20px;
+    background-color: #ffffff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  }
+  
+  .panel p {
+    margin: 15px 0;
+    color: #34495e;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .faq-container {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .accordion {
+      font-size: 1rem;
+      padding: 15px;
+    }
+  }</style>
   <style data-tag="reset-style-sheet">
     html {
       line-height: 1.15;
@@ -619,7 +719,7 @@
 
 
 
-      <h2 class="home-text85 heading2">Common questions</h2>
+      <h2 class="home-text85 heading2">  Frequently Asked Questions</h2>
 
       <span class="home-banner-sub-heading bodySmall">
         <span>
@@ -653,88 +753,59 @@
       <!-- <button class="buttonFilled">Learn More</button> -->
     </div>
   </div>
-  <div class="home-faq">
-
-
-    <div class="accordion mb-5 " id="accordionExample">
-      <div class="accordion-item ">
-        <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-            aria-expanded="false" aria-controls="collapseOne">
-
+  <div class="faq-container">
+    
+    <div class="faq">
+        <button class="accordion">
+            <i class="fas fa-search"></i>
             How can I search for jobs on this website?
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <p style="font-size: 1rem;">You can search for jobs by entering keywords in the search bar and filtering the
-              results based on your preferences.</p>
-          </div>
+            <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="panel">
+            <p>You can search for jobs by entering keywords in the search bar and filtering the results based on your preferences. Our advanced search options allow you to narrow down results by location, job type, and more.</p>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Are there any fees for using this platform?
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <p style="font-size: 1rem;">No, our platform is completely free for job seekers. There are no hidden charges
-              or fees.</p>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            How can I contact employers through this website?
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <p style="font-size: 1rem;">You can contact employers by sending them a message through our messaging system
-              or by using the contact information provided in the job listing.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header ">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-            Can I receive job alerts for new postings?
-          </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body ">
-            <p style="font-size: 1rem;">Yes, you can set up job alerts based on your preferences. You will receive
-              notifications when new jobs matching your criteria are posted.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-            Is my personal information secure on this platform?
-          </button>
-        </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <p style="font-size: 1rem;">Yes, we take data privacy and security seriously. Your personal information is
-              encrypted and protected to ensure confidentiality.
-          </div>
-        </div>
-      </div>
-
-
     </div>
-
-
+    <div class="faq">
+        <button class="accordion">
+            <i class="fas fa-dollar-sign"></i>
+            Are there any fees for using this platform?
+            <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="panel">
+            <p><strong>No</strong>, our platform is completely free for job seekers. There are no hidden charges or fees. We believe in connecting talent with opportunities without any cost to the job seeker.</p>
+        </div>
+    </div>
+    <div class="faq">
+        <button class="accordion">
+            <i class="fas fa-envelope"></i>
+            How can I contact employers through this website?
+            <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="panel">
+            <p>You can contact employers by sending them a message through our secure messaging system or by using the contact information provided in the job listing. We encourage professional communication to increase your chances of success.</p>
+        </div>
+    </div>
+    <div class="faq">
+        <button class="accordion">
+            <i class="fas fa-bell"></i>
+            Can I receive job alerts for new postings?
+            <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="panel">
+            <p><strong>Yes</strong>, you can set up job alerts based on your preferences. You will receive notifications when new jobs matching your criteria are posted. This feature helps you stay up-to-date with the latest opportunities in your field.</p>
+        </div>
+    </div>
+    <div class="faq">
+        <button class="accordion">
+            <i class="fas fa-lock"></i>
+            Is my personal information secure on this platform?
+            <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="panel">
+            <p><strong>Yes</strong>, we take data privacy and security seriously. Your personal information is encrypted and protected to ensure confidentiality. We adhere to strict data protection regulations to safeguard your information.</p>
+        </div>
+    </div>
+</div>
 
     <!--   <div class="faqContainer">
             <div class="home-faq1">
@@ -994,7 +1065,7 @@
         <div class="footer-link-group">
           <h4>Support</h4>
           <ul>
-            <li><a href="#faq">FAQs</a></li>
+            <li><a href="/faq.html">FAQs</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -1099,6 +1170,26 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <script src="/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+       const accordions = document.querySelectorAll('.accordion');
+   
+       accordions.forEach(accordion => {
+           accordion.addEventListener('click', () => {
+               accordion.classList.toggle('active');
+               const panel = accordion.nextElementSibling;
+               
+               if (panel.style.maxHeight) {
+                   panel.style.maxHeight = null;
+                   panel.style.padding = '0 18px';
+               } else {
+                   panel.style.maxHeight = panel.scrollHeight + 'px';
+                   panel.style.padding = '18px';
+               }
+           });
+       });
+   });
+</script>
 </body>
 
 </html>
