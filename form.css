@@ -1,62 +1,81 @@
 body {
-    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
 }
 
 .main {
-    background-image: url(https://foreseetheday.com/wp-content/uploads/2019/06/geometric-constructions-step-by-step-925x540.jpg);
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  color: #ffffff;
-  overflow-y: scroll;
-  font-size: 24px
+background-image: url(https://foreseetheday.com/wp-content/uploads/2019/06/geometric-constructions-step-by-step-925x540.jpg);
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+color: #ffffff;
+overflow-y: scroll;
+/* font-size: 24px */
 }
 
 .main::after {
 content: "";
-  background-color: rgb(0, 0, 0,.8);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+background-color: rgba(0, 0, 0, 0.3);
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
 }
 
 .main > h1,
 .main > p {
 text-align: center;
-font-family: 35px;
+font-family: 20px;
 z-index: 2;
 position: relative
 }
 
+
 .main-content {
 background-color: rgba(27, 43, 50, 0.9);
-  max-width: 650px;
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-  margin: 0 auto;
+max-width: 650px;
+display: flex;
+flex-direction: column;
+padding: 60px;
+margin: 0 auto;
 margin-bottom: 40px;
-  border-radius: 5px;
-  z-index: 2;
-  position: relative;
-    box-shadow: 0px -1px 10px 5px #0060B9;
+border-radius: 5px;
+z-index: 2;
+position: relative;
+box-shadow: 0px -1px 10px 5px #0060B9;
+font-size: 15px;
+font-weight: 900;
 }
 
+#survey-form{
+margin-left: 9%;
+}
+select{
+font-size: 10px;
+}
+select > option{
+font-size: 15px;
+}
+
+
+
 #name, #email, #number, #dropdown, #comment {
-  display: block;
-  width: 100%;
-  height: 35px;
-  padding: 5px 10px;
-  color: #000000;
-  background-color: #ffffff;
-  border: 1px solid #eeeeee;
-  border-radius: 5px;
-  font-size: 20px;
-  margin-bottom: 40px;
+display: block;
+width: 85%;
+height: 30px;
+padding: 5px 20px;
+color: #000000;
+background-color: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 20px;
+font-size: 15px;
+margin-bottom: 40px;
+}
+#dropdown{
+height: 40px; 
+width: 92%;
 }
 
 label[for=name], 
@@ -83,15 +102,21 @@ min-height: 180px;
 }
 
 label[for=comment]{
-margin-top: 30px
+margin-top: 10px
 }
 
+
+
+
+
 #submit {
-display: block;
-width: 100%;
-padding: 0.75rem;
+/* display: block; */
+width: 80%;
+height: 50px;
+/* padding: 0.75rem; */
+margin-left: 5%;
 background: #0060B9;
-border-radius: 2px;
+border-radius: 15px;
 cursor: pointer;
 border: 0;
 color: #ffffff;
